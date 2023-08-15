@@ -1,0 +1,33 @@
+﻿  rasterizer.cpp
+I:\TimFile\tools\vcpkg\installed\x86-windows\include\eigen3\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+I:\TimFile\tools\vcpkg\installed\x86-windows\include\eigen3\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+I:\TimFile\tools\vcpkg\installed\x86-windows\include\eigen3\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.hpp(64,35): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.hpp(65,43): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\tools\vcpkg\installed\x86-windows\include\opencv2\objdetect\aruco_board.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(65,20): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(87,32): warning C4305: “初始化”: 从“double”到“float”截断
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(88,32): warning C4305: “初始化”: 从“double”到“float”截断
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(106,33): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(107,34): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(142,26): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(142,29): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(165,17): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(168,17): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(180,16): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(182,20): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(192,62): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(192,59): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(197,48): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(215,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(215,38): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(217,54): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(217,51): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(222,40): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(232,30): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(232,33): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(280,15): warning C4244: “参数”: 从“float”转换到“const unsigned int”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(297,12): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(298,12): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+I:\TimFile\Games101\FinalHomework\Homework2\rasterizer.cpp(300,78): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
+  Homework2.vcxproj -> I:\TimFile\Games101\FinalHomework\Debug\Homework2.exe
