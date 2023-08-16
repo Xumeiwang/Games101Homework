@@ -281,35 +281,25 @@ void rst::rasterizer::rasterize_triangle(const Triangle& t, const std::array<Eig
     // Use: auto pixel_color = fragment_shader(payload);
 
     auto v = t.toVector4();
-    float min_x = width;
-    float max_x = 0;
+    float min_x = std::min(v[0].x(), std::min(v[1].x(), v[2].x()));
+    float max_x = std::max(v[0].x(), std::max(v[1].x(), v[2].x()));
+    float min_y = std::min(v[0].y(), std::min(v[1].y(), v[2].y()));
+    float max_y = std::max(v[0].y(), std::max(v[1].y(), v[2].y()));
 
-    float min_y = height;
-    float max_y = 0;
-
-    for (int i = 0; i < 3; i++)
+    for (int i = min_x; i < max_x; i++)
     {
-        min_x = std::min(v[i].x(), min_x);
-        max_x = std::max(v[i].x(), max_x);
-
-        min_y = std::min(v[i].y(), min_y);
-        max_y = std::max(v[i].y(), max_y);
-    }
-
-    for (int x = min_x; x < max_x; x++)
-    {
-        for (int y = min_y; y < max_y; y++)
+        for (int j = min_y; j < max_y; j++)
         {
-            
-            if (insideTriangle(x + 0.5, y + 0.5, t.v)) {
+            if (insideTriangle(i + 0.5, j + 0.5, t.v))
+            {
                 //Depth interpolated
-                auto [alpha, beta, gamma] = computeBarycentric2D(x + 0.5, y + 0.5, t.v);
+                auto [alpha, beta, gamma] = computeBarycentric2D(i + 0.5, j + 0.5, t.v);
 
                 float Z = 1.0 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());
                 float zp = alpha * v[0].z() / v[0].w() + beta * v[1].z() / v[1].w() + gamma * v[2].z() / v[2].w();
                 zp *= Z;
 
-                if (zp < depth_buf[get_index(x, y)])
+                if (zp < depth_buf[get_index(i, j)])
                 {
                     // color 
                     auto interpolated_color = interpolate(alpha, beta, gamma, t.color[0], t.color[1], t.color[2], 1);
@@ -325,9 +315,9 @@ void rst::rasterizer::rasterize_triangle(const Triangle& t, const std::array<Eig
                     payload.view_pos = interpolated_shadingcoords;
                     auto pixel_color = fragment_shader(payload);
                     // 设置深度
-                    depth_buf[get_index(x, y)] = zp;
+                    depth_buf[get_index(i, j)] = zp;
                     // 设置颜色
-                    set_pixel(Eigen::Vector2i(x, y), pixel_color);
+                    set_pixel(Eigen::Vector2i(i, j), pixel_color);
                 }
             }
         }
